@@ -7,5 +7,5 @@ These notes are written in Quarto `.qmd` and rendered to PDF.
 
 ## 🔗 Test Notes
 
-- [📄 PDF](./TEST/test.pdf.pdf)
-- [🧪 Source .qmd](./TEST/test.qmd.qmd)
+- [📄 PDF](./TEST/test.pdf)
+- [🧪 Source .qmd](./TEST/test.qmd)

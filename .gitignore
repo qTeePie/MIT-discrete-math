@@ -1,0 +1,26 @@
+# ✅ Ignore all PDFs by default
+*.pdf
+
+# 🚫 BUT allow your official entries
+!*/entry.pdf
+
+# ⚙️ Ignore Quarto cache
+.quarto/
+
+# 🧻 Ignore LaTeX junk
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+
+# 🧠 Ignore system + editor files
+.DS_Store
+Thumbs.db
+.vscode/
+*.code-workspace
+
+# 💥 Backup files
+*~
+*.bak

@@ -1,0 +1,11 @@
+---
+title: "What is a proof?"
+format: pdf
+---
+
+## Problem 1.1
+
+A rearrangement proof - starts of with building a $c$x
+### My diagram:
+
+![Pythagoras visual proof](images/01-pythagoras-proof.png)
