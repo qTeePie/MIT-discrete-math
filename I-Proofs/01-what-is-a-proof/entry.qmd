@@ -1,11 +1,27 @@
 ---
+margin-top: 3rem
 title: "What is a proof?"
-format: pdf
+format: 
+    html:
+        mainfont: sans-serif
+editor: visual
 ---
 
 ## Problem 1.1
 
-A rearrangement proof - starts of with building a $c$x
-### My diagram:
+A rearrangement proof - first we arrange the shapes to form a $c \cdot c$ square, prooving that the inner square is $(b - a) \cdot (b - a)$.
+
+Next we arrange the shapes to form two squares, one  $b \cdot b$ and the other $a \cdot a$.
 
 ![Pythagoras visual proof](images/01-pythagoras-proof.png)
+
+These arrangements proves: 
+$$
+c^2 = a^2 + b^2
+$$
+
+<br>
+
+::: {.callout-note}
+Since we have only rearranged the shapes, the total area remains the same. 
+:::
