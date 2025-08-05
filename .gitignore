@@ -1,14 +1,17 @@
-# ✅ Ignore all PDFs by default
+# ✅ Ignore all standalone rendered files
 *.pdf
 *.html
 
-# 🚫 BUT allow your official entries
+# 🚫 BUT allow official chapter PDFs
 !*/entry.pdf
 
-# ⚙️ Ignore Quarto cache
+# ⚙️ Ignore Quarto cache + generated folders
 .quarto/
+.quarto-cache/
+_site/
+docs/
 
-# 🧻 Ignore LaTeX junk
+# 🧻 Ignore LaTeX junk (PDF rendering)
 *.aux
 *.log
 *.out
@@ -16,12 +19,22 @@
 *.fls
 *.fdb_latexmk
 
-# 🧠 Ignore system + editor files
+# 🧠 Ignore system/editor files
 .DS_Store
 Thumbs.db
 .vscode/
 *.code-workspace
 
-# 💥 Backup files
+# 💥 Ignore backups
 *~
 *.bak
+
+# 🤖 Ignore Quarto's HTML output folders
+*/entry_files/
+*/entry_libs/
+
+# Ignore auto-generated folders inside any chapter folder
+**/entry_files/
+**/entry_files/**
+**/entry_files/libs/
+**/entry_files/libs/**
