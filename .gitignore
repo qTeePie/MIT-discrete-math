@@ -12,12 +12,13 @@ _site/
 docs/
 
 # 🧻 Ignore LaTeX junk (PDF rendering)
+*.tex
 *.aux
 *.log
 *.out
 *.toc
-*.fls
 *.fdb_latexmk
+*.fls
 
 # 🧠 Ignore system/editor files
 .DS_Store
