@@ -98,6 +98,22 @@ $$
 ... = \textcolor{red}{(10¢)^2 = 100¢} = \$1 
 $$
 
-This is where the comparison of our real-life, high-value $¢$ to the suspicious $¢^2$ happens &rarr; **BOGUS**!
+This is where the comparison of our real-life, high-value $¢$ to the suspicious $¢^2$ happens &rarr; **BOGUS**.
+
+**(c)** Division by zero &rarr; **BOGUS**.
+
+$$
+\begin{align*}
+a &= b \\
+a^2 &= ab \\
+a^2 - b^2 &= ab - b^2 \\
+(a - b)(a + b) &= (a - b)b 
+\quad \text{\color{red}(dividing by $(a-b)=0$ — ILLEGAL)} \\
+a + b &= b \\
+a &= 0
+\end{align*}
+$$
+
+
 
 </div>
