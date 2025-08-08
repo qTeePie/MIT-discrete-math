@@ -193,7 +193,34 @@ ab &\gt \sqrt{n} \cdot \sqrt{n} \quad \quad \textcolor{orange}{\text{(contradict
 \end{align*}
 $$
 
-💯 **BASED**
+**Proof by contradiction**, if both $a$ and $b$ are greater than $\sqrt{n}$, their product will be greater than $n$.
+
+---
+
+### Problem 1.10
+
+**(a)** **Explain** why if $n^2$ is even --- then $n$ is even.
+
+Every integer can be expressed as a product of prime factors. For the number $n$, let's make a set of its prime factors (allowing repeats).
+If $n$ is even, $2 \in \{\text{prime factors of } n\}$.
+
+$$
+\text{Let } n = \{ 2, p_2, p_3 \} \quad\text{(prime factors of $n$)}
+$$
+
+When we square $n$, its prime factors just get duplicated.
+
+$$
+n^2 = \{ 2, p_2, p_3, 2, p_2, p_3 \}
+$$
+
+So for any $n^2$ that has $2$ as a prime factor, it must have already been a prime factor of $n$. 🔢
+
+**&rarr; They are both even!**
+
+**(b)** **Same logic as above, but with 3 instead of 2.**
+
+---
 
 </div>
 
