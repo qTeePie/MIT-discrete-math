@@ -284,10 +284,9 @@ $(3-2\sqrt{2})q$ contains an expression multiplied by $q$, resembling the defini
 Rewrite the coefficient so a $(\sqrt2-1)$ appears (this lets us swap in $q'$ next):
 
 $$
-\begin{aligned*}
-3-2\sqrt{2} &=
-3-2\sqrt2 \;=\; 1 - 2(\sqrt2-1).
-\end{aligned*}
+\begin{align*} \\
+3-2\sqrt{2} &= 1-2(\sqrt{2} -1)\\
+\end{align*}
 $$
 
 Therefore
@@ -302,20 +301,27 @@ $$
 (\sqrt2-1)q' \;=\; q - 2q'.
 $$
 
-* **Integer?** Yes: $q$ and $q'$ are integers, so $q-2q'$ is an integer.
-* **Nonnegative?** We need $q-2q'\ge 0$. From $q'=(\sqrt2-1)q$ and
-  $(\sqrt2-1)^2>0 \Rightarrow 3-2\sqrt2>0 \Rightarrow \tfrac32>\sqrt2 \Rightarrow \sqrt2-1<\tfrac12$,
-  multiply by $q>0$ to get $q'<\tfrac{q}{2}$. Thus $2q'<q$ and so $q-2q'>0$.
+The whole point of this was proving that $q'$ is a non-negative integer, smaller than $q$, that when multiplied $(\sqrt{2} - 1)$ produced a nonnegative integer.
+
+So, does $q-2q'$ meet these requirements? 
+
+1. **Integer?** Yes: $q$ and $q'$ are integers, so $q-2q'$ is an integer.
+2. **Nonnegative?** We need $q-2q'\ge 0$. 
+
+$$
+\begin{align*}
+q-2q' &\ge 0 \\
+2q' &\le q \\
+q' &\le \frac{q}{2}\\
+\end{align*}
+$$
 
 So $(\sqrt2-1)q'$ is actually a **positive** integer.
-
----
-
-### Contradiction (aka mic drop)
-
 We found a **smaller** positive integer $q'$ with the same property as $q$:
 
+&rarr; **Condradiction ❌**
 
+---
 
 </div>
 
