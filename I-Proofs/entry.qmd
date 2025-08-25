@@ -241,9 +241,9 @@ Let $$
 A = \{ n \in \mathbb{N}_0 \mid \exists f \in \mathbb{F},\ n + f \in S \}
 $$
 
-Since $\mathbb{N}_0$ is well-ordered, $A$ has a smallest element — call it $n_s$.
+Here we collect all the whole numbers $n$ such that at least one fraction $f$ exists where $n + f$ is in our set $S$ in a seperate subset $A$.
 
-So no element of $S$ has integer part smaller than $n_s$.
+Since $\mathbb{N}_0$ is well-ordered, $A$ has a smallest element — call it $n_s$.
 
 ------------------------------------------------------------------------
 
@@ -254,7 +254,7 @@ $$
 B = \{ f \in \mathbb{F} \mid n_s + f \in S \}
 $$
 
-This set is nonempty, and since $\mathbb{F}$ is well-ordered, $B$ has a least element — call it $f_s$.
+$B \subseteq S$, containing all fractions that exist in combination with $n_s$ in $S$. Since $\mathbb{F}$ is well-ordered, $B$ has a least element — call it $f_s$.
 
 Let $x_0 = n_s + f_s$.
 
@@ -275,12 +275,6 @@ Take any $x = m + g \in S$. Then:
     Then $x > n_s + 1 > x_0$
 
 ✅ So $x \ge x_0$ in all cases ⇒ $x_0$ is the minimum of $S$
-
-------------------------------------------------------------------------
-
-**🧠 Conclusion:**
-
-$\mathbb{N} + \mathbb{F}$ is well-ordered because every nonempty subset has a least element, and the structure (integer block + fraction \< 1) guarantees that picking the smallest $n$ and smallest $f$ within that $n$ **must** give the smallest possible value. ✨
 
 ------------------------------------------------------------------------
 :::::
