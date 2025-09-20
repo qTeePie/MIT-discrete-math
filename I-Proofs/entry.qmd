@@ -277,4 +277,43 @@ Take any $x = m + g \in S$. Then:
 ✅ So $x \ge x_0$ in all cases ⇒ $x_0$ is the minimum of $S$
 
 ------------------------------------------------------------------------
-:::::
+
+## Mathematical Data Types
+
+### Problem 4.25
+
+**(b)** Assume $h = f \circ g$ is injective and $f$ is total. To prove that $g$ must be injective, we use **contradiction**.
+
+Suppose $g$ is **not injective**, so:
+
+$$
+\exists a_1, a_2 \in A \quad \text{such that} \quad a_1 \ne a_2 \quad \text{and} \quad g(a_1) = g(a_2) = b_0
+$$
+
+Since $f$ is a function, and it is total, that means $f(b_0)$ exists. Let’s call it $c_0$:
+
+$$
+f(b_0) = c_0
+$$
+
+Then:
+
+$$
+h(a_1) = f(g(a_1)) = f(b_0) = c_0
+$$
+
+$$
+h(a_2) = f(g(a_2)) = f(b_0) = c_0
+$$
+
+So we get:
+
+$$
+h(a_1) = h(a_2) = c_0
+$$
+
+But we assumed $a_1 \ne a_2$ → contradiction, because $h$ was supposed to be injective.
+
+::: callout-important
+**Conclusion:** If $h$ is injective and $f$ is total, then $g$ must also be injective ✅
+:::
