@@ -317,3 +317,45 @@ But we assumed $a_1 \ne a_2$ → contradiction, because $h$ was supposed to be i
 ::: callout-important
 **Conclusion:** If $h$ is injective and $f$ is total, then $g$ must also be injective ✅
 :::
+
+## Induction
+
+### Problem 5.5
+
+We are proving this statement by induction. 
+
+Our predicate $P(n)$ will be:
+
+$$
+\forall n > 1, \quad \sum_{i=1}^{n} \frac{1}{i^2} < 2 - \frac{1}{n}
+$$
+
+#### Base case 
+
+Base case for this induction is $P(2)$.
+
+#### Induction Step
+
+Assuming $P(n)$ is true, we know:
+
+$$
+S_n = \sum^{n}_{i=1} \frac{1}{i^2} < 2 - \frac{1}{n}
+$$
+
+Working our way to $P(n+1)$, we want to prove that this equation holds:
+
+$$
+S_{n+1} = \sum^{n+1}_{i=1} \frac{1}{i^2} < 2 - \frac{1}{(n + 1)}
+$$
+
+Adding $\frac{1}{(n+1)^2}$ to both sides, this also holds true:
+
+$$
+S_n + \frac{1}{(n+1)^2} < \left( 2 - \frac{1}{n} \right) + \frac{1}{(n+1)^2}
+$$
+
+Knowing (by assumption), that $S_n < 2 - \frac{1}{n}$, lets swap $S_n$ for its inductive bound,, forming an inequality we can work with.
+
+$$
+\left( 2 - \frac{1}{n} \right) + \frac{1}{(n+1)^2} < 2 - \frac{1}{(n + 1)}
+$$
