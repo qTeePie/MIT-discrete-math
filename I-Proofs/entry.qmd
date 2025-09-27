@@ -10,8 +10,7 @@ format:
 editor: visual
 ---
 
-::::: container
-
+:::::: container
 # Section I
 
 > Selected tasks from **Section I** 📚
@@ -20,7 +19,7 @@ editor: visual
 
 ### Problem 1.1: Visual Proof of Pythagoras
 
-**(a)** First, we arrange the shapes to form a $c \cdot c$ square, prooving that the inner square is $(b - a) \cdot (b - a)$
+**(a)** First, we arrange the shapes to form a $c \cdot c$ square, proving that the inner square is $(b - a) \cdot (b - a)$
 
 **(b)** Next we rearrange the shapes to form two squares, one $b \cdot b$ and the other $a \cdot a$.
 
@@ -278,7 +277,7 @@ Take any $x = m + g \in S$. Then:
 
 ------------------------------------------------------------------------
 
-## Mathematical Data Types
+## Mathematical Data Types ➰
 
 ### Problem 4.25
 
@@ -318,11 +317,11 @@ But we assumed $a_1 \ne a_2$ → contradiction, because $h$ was supposed to be i
 **Conclusion:** If $h$ is injective and $f$ is total, then $g$ must also be injective ✅
 :::
 
-## Induction
+## Induction 👩‍⚖️
 
 ### Problem 5.5
 
-We are proving this statement by induction. 
+We are proving this statement by induction.
 
 Our predicate $P(n)$ will be:
 
@@ -330,9 +329,31 @@ $$
 \forall n > 1, \quad \sum_{i=1}^{n} \frac{1}{i^2} < 2 - \frac{1}{n}
 $$
 
-#### Base case 
+#### Base case
 
 Base case for this induction is $P(2)$.
+
+$$
+S_2 = \sum_{i=1}^{2} \frac{1}{i^2}
+= 1 + \frac{1}{4}
+= \frac{5}{4}
+= 1.25
+$$
+
+On the other hand,
+
+$$
+2 - \frac{1}{2} = \frac{3}{2} = 1.5
+$$
+
+Which means
+
+$$
+S_2 = 1.25 < 1.5 = 2 - \frac{1}{2} \quad \boxed{\textcolor{green}{\checkmark}}
+$$
+
+base case $P(2)$ holds.
+
 
 #### Induction Step
 
@@ -354,8 +375,52 @@ $$
 S_n + \frac{1}{(n+1)^2} < \left( 2 - \frac{1}{n} \right) + \frac{1}{(n+1)^2}
 $$
 
-Knowing (by assumption), that $S_n < 2 - \frac{1}{n}$, lets swap $S_n$ for its inductive bound,, forming an inequality we can work with.
+Knowing (by assumption), that $S_n < 2 - \frac{1}{n}$, lets swap $S_n$ for its inductive bound to form an inequality we can work with.
 
 $$
-\left( 2 - \frac{1}{n} \right) + \frac{1}{(n+1)^2} < 2 - \frac{1}{(n + 1)}
+\left( 2 - \frac{1}{n} \right) + \frac{1}{(n+1)^2} < 2 - \frac{1}{n + 1}
 $$
+
+If we manage to prove the above equation, we have proven $P(n)$ by induction. Lets simplify! 🚀
+
+**Cancel the 2's:**\
+$$
+- \frac{1}{n} + \frac{1}{(n+1)^2} < - \frac{1}{n + 1}
+$$
+
+**Flip signs:**\
+$$
+\frac{1}{n} - \frac{1}{(n+1)^2} > \frac{1}{n + 1}
+$$
+
+**Simplify LHS:**\
+$$
+\frac{1}{n} - \frac{1}{(n+1)^2} = \frac{(n+1)^2 - n}{n(n+1)^2} = \frac{n^2+n+1}{n(n+1)^2}
+$$
+
+**Now the inequality is:**\
+
+$$
+\frac{n^2+n+1}{n(n+1)^2} > \frac{1}{n + 1}
+$$
+
+❗ **NB:** Since n > 1, denominators are always positive, allowing for cross multiplication.
+
+**Cross multiply:**\
+$$
+\left( \frac{n^2+n+1}{n(n+1)^2} \right) \cdot \left( n(n+1)^3 \right) > \frac{1}{n + 1} \left( n(n+1)^3 \right)
+$$
+
+**Cancel out the common items:**\
+$$
+n^2+n+1 > n(n+1) = n^2 + n
+$$
+
+**Move everything to LHS:**\
+$$
+1 > 0
+$$
+
+✅ always true &rarr; $P(n)$ proven by induction.
+
+::::::
